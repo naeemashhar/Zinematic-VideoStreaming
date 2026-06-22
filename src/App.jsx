@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./components/Home";
 import Trending from "./components/Trending";
 import Popular from "./components/Popular";
@@ -42,6 +43,7 @@ const App = () => {
         
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Analytics />
     </div>
   );
 };
